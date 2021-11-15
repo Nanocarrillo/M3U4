@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Ejercicio 2: 
+    Programar un contador de caracteres para un textarea.-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Part 2 Ejercicio 2</title>
+    <style>
+        textarea {
+            background-color: honeydew;
+            border-radius: 5px;
+            border: 1 px solid #999;
+            padding: 10em 2em;
+            font-size: 0.8em;
+            width: 90%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <textarea name="parrafo"></textarea>
+    <input type="button" onclick="contador_caracteres()" value="Numero de caracteres">
+
+
+    <script>
+        function contador_caracteres() {
+            var contador = document.querySelector("textarea");
+            console.log(contador.value.length);
+            alert("El numero de caracteres ingresados es: " + contador.value.length);
+        }
+    </script>
+
+</body>
+
+<body>
+
+    <!--
+    <script>
+
+        var texto_ingresado = [];
+        texto_ingresado = prompt('Ingrese un parrafo:', '');
+        document.write(texto_ingresado);
+        document.write('<br>');
+        document.write(texto_ingresado.length);
+
+        console.log(texto_ingresado)
+        console.log(texto_ingresado.length)
+
+    </script>
+    -->
+
+</body>
+
+</html>

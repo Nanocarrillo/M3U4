@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Ejercicio 3:
+Dado el siguiente array de alumnos utilizar los métodos de array vistos para generar un array con los alumnos aprobados. Se considera aprobado todo alumno que tenga una nota mayor o igual a 7.
+
+Ver ejemplo ejercicios 17, 18 y 19 de clase, cual de los tres ejercicios podria utilizar
+
+UTILIZAR "FILTER", EJERCICIO 18
+
+var alumnos = [
+  {
+    nombre: 'Juan Gomez',
+    nota: 7
+  }, {
+    nombre: 'Pedro Rodriguez',
+    nota: 4
+  }, {
+    nombre: 'Roxana García',
+    nota: 8
+  }, {
+    nombre: 'Luciano Lopez',
+    nota: 5
+  }, {
+    nombre: 'Fernanda Gimenez',
+    nota: 6
+  }, {
+    nombre: 'Florencia Martinez',
+    nota: 10
+  }, {
+    nombre: 'Raul Sanchez',
+    nota: 7
+  }, {
+    nombre: 'Sandra Figueroa',
+    nota: 8
+  }
+];
+Subir a un repositorio publico en GitHub y compartir la URL del mismo
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Part 2 Ejercicio 3</title>
+</head>
+
+<body>
+
+  <script>
+    var alumnos = [
+      {
+        nombre: 'Juan Gomez',
+        nota: 7
+      }, {
+        nombre: 'Pedro Rodriguez',
+        nota: 4
+      }, {
+        nombre: 'Roxana García',
+        nota: 8
+      }, {
+        nombre: 'Luciano Lopez',
+        nota: 5
+      }, {
+        nombre: 'Fernanda Gimenez',
+        nota: 6
+      }, {
+        nombre: 'Florencia Martinez',
+        nota: 10
+      }, {
+        nombre: 'Raul Sanchez',
+        nota: 7
+      }, {
+        nombre: 'Sandra Figueroa',
+        nota: 8
+      }
+    ];
+
+    for (var i = 0; i < alumnos.length; i++) {
+      var alumno = alumnos[i].nombre;
+      var notas = alumnos[i].nota;
+
+      if (notas >= 7) {
+        console.log(alumno);
+        console.log(notas);
+        alert("los alumnos aprobados son: " + alumno)
+      } /* No pude aplicar el filter, intente con map tambien y no*/
+      /* igual me sirvio para aprender, veo como  lo resolviste*/
+    }
+
+    /*    for (var i = 0; i < alumnos.length; i++) {
+      var alumno = alumnos[i].nombre;
+      var notas = [alumnos[i].nota].filter(Number => Number >= 7);
+    
+      
+      console.log(alumno);
+      console.log(notas);*/
+
+  </script>
+</body>
+
+</html>

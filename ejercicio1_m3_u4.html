@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<!--Ejercicio 1:
+    Crear un documento html con 3 cuadrados que, al ser clickeados, 
+    cambien el color de fondo del documento. Cada cuadrado debera tener un color distinto.-->
+
+<!-- ver ejemplo clase ejemplo id para cambiar background, ver ejercicios 15 y 16-->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JS Part 2 Ejercicio 1</title>
+    <link rel="stylesheet" href="ejercicio_1.css">
+</head>
+
+<body id="fondo">
+
+    <h1>Oprima un cuadrado para cambiar el fondo</h1>
+
+    <button class="boton1" id="rojo">Oprima este boton para cambiar al color rojo</button>
+
+    <button class="boton2" id="azul">Oprima este boton para cambiar al color azul</button>
+
+    <button class="boton3" id="verde">Oprima este boton para cambiar al color azul</button>
+
+    <script>
+
+        var fondo = document.getElementById('fondo');
+        var rojo = document.getElementById('rojo');
+        var azul = document.getElementById('azul');
+        var verde = document.getElementById('verde');
+
+        // podemos acceder a propiedades de css 
+        // las que llevan guion se reemplazan por minusculaMayuscula (backgroundColor en mi caso)
+
+        rojo.addEventListener('click', function () {
+            fondo.style.backgroundColor = 'red';
+        });
+
+        azul.addEventListener('click', function () {
+            fondo.style.backgroundColor = 'blue';
+        });
+
+        verde.addEventListener('click', function () {
+            fondo.style.backgroundColor = 'green';
+        });
+
+
+    </script>
+
+</body>
+
+</html>
